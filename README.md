@@ -1,18 +1,56 @@
-# React + Vite
+# 📌 Sistema de Autenticação Fullstack (Login & Cadastro)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação fullstack completa para autenticação de usuários, com registro, login, proteção de rotas e interface responsiva. Projeto desenvolvido com foco em arquitetura simples.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tecnologias utilizadas
 
-## React Compiler
+### 🔹 Frontend
+- React (Vite)
+- Tailwind CSS (v4)
+- Axios
+- React Router DOM
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### 🔹 Backend
+- Node.js
+- Express
+- JSON Web Token (JWT)
+- Bcrypt
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Cadastro de usuários  
+- ✅ Login com autenticação segura (JWT)  
+- ✅ Proteção de rotas privadas  
+- ✅ Logout  
+- ✅ Interface responsiva (mobile + desktop)  
+- ✅ Sidebar dinâmica (menu mobile + desktop)
+
+---
+
+## 🔐 Autenticação
+
+- Senhas criptografadas com bcrypt  
+- Tokens JWT com expiração  
+- Middleware para validação de rotas protegidas  
+
+---
+
+## 🧱 Estrutura do Projeto
+
+
+📦 projeto
+┣ 📂 backend
+┃ ┣ 📂 controllers
+┃ ┣ 📂 middleware
+┃ ┣ 📂 routes
+┃ ┗ server.js
+┣ 📂 frontend
+┃ ┣ 📂 components
+┃ ┣ 📂 pages
+┃ ┣ 📂 services
+┃ ┗ main.jsx
+┗ README.md
