@@ -1,5 +1,5 @@
 import axios from 'axios';
-export const api = axios.create({ baseURL: `https://helogin-api.onrender.com/api` });
+export const api = axios.create({ baseURL: `https://helogin-api.onrender.com/` });
 
 api.interceptors.request.use((config) => {
     const token = localStorage.getItem('token');
